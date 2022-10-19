@@ -25,6 +25,29 @@
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 10px;
+  transition: 0.3s;
+  filter: grayscale(0.3);
+}
+
+.card img:hover {
+  transition: 0.3s;
+  filter: grayscale(0);
+  box-shadow: 0px 0px 50px -16px rgba(0, 0, 0);
+  animation: anima 2s infinite;
+}
+
+@keyframes anima {
+  0% {
+    transform: rotateZ(1deg);
+  }
+
+  50% {
+    transform: rotateZ(-1deg);
+  }
+
+  100% {
+    transform: rotateZ(1deg);
+  }
 }
 
 .card h2 {
